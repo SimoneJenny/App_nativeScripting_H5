@@ -1,0 +1,23 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" backgroundColor="gray">
+
+    <ActionBar title="Aflevering" icon="" backgroundColor="gray"  margin="1" padding="1"/>
+    <GridLayout columns="*,*,*,*,*" rows="*,*,*,*,*,*,*" margin-top="1" padding="1">  
+        <Label text="Compute Page" class="h1 text-center" row="0" colSpan="4"/>
+        <Button id="btn1" text="Tal 1" tap="onGetValue" class="-primary" row="1" colSpan="4" backgroundColor="hotpink"/>
+        <Label id="Value1" class="h2 text-center" text="Tal Mangler" row="2" colSpan="4"/>
+        <Button id="btn2" text="Tal 2" tap="onGetValue" class="-primary" row="3" colSpan="4" backgroundColor="hotpink"/>
+        <Label id="Value2" class="h2 text-center" textWrap="true" text="Tal Mangler"  row="4" colSpan="4"/>
+        <Button id="plus" text="+" tap="onTap" class="-primary" row="5" col="0" backgroundColor="hotpink"/>
+        <Button id="minus" text="-" tap="onTap" class="-primary" row="5" col="1" backgroundColor="hotpink"/>
+        <Button id="gange" text="*" tap="onTap" class="-primary" row="5" col="2" backgroundColor="hotpink"/>
+        <Button id="dividere" text="/" tap="onTap" class="-primary" row="5" col="3" backgroundColor="hotpink"/>
+        <Button id="kvadrat" text="^" tap="onTap" class="-primary" row="5" col="4" backgroundColor="hotpink"/>
+        <Label text="Resultat" class="h2 text-center" textWrap="true" row="6" col="0" colSpan="2"/>
+        <Label id="Result" class="h2 text-center" textWrap="true" row="6" col="3" colSpan="4"/>
+    </GridLayout>
+</Page>
+
+<!--linje 3 holder øje med colonner og rækker, altså hvor mange der skal være i designet-->
+<!--ongetvalue =  metode bliver hentet i vores main-page.ts-->
+<!--ontap = metode bliver hentet i vores main-page.ts-->
+<!--id = så vi kan kalde på dem i vores main-oage.ts fil-->

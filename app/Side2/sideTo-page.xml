@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" backgroundColor="gray">
+
+    <ActionBar title="Aflevering" icon="" backgroundColor="gray"/>
+
+    <StackLayout class="p-20">
+        <Label text="Get value Page" backgroundColor="hotpink" class="h1 text-center"/>
+        <Label id="ToNr" class="h2 text-center"/>
+        <TextField id="ValueToNr" keyboardType="Number" class="h2 text-center"/> 
+        <Button text="Send tal tilbage" tap="GiveBackValueon" class="-primary" backgroundColor="black"/>
+    </StackLayout>
+</Page>
+
+<!--keyboardType="Number" = så vi kun kan skrive tal-->
+<!--GiveBackValueon = bliver kaldt i vores TS fil-->
